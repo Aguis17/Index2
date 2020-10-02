@@ -1,0 +1,297 @@
+header { 
+    background-color: red;
+    font-style: oblique;
+    text-align: center;
+}
+
+
+.nav {
+    color: white;
+    font-style: inherit;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    background-color: grey;;
+}
+
+body {
+    text-decoration-color: red;
+    font-size: large;
+    background-color: black;    
+}
+
+
+
+form
+{
+    padding: 35px;
+    margin: 30px;
+    font-family: Georgia ;
+    font-size: 17px ;
+    background-color: grey;
+}
+
+
+h2{
+    color: red;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+    font-style: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    }
+h5 {
+    color: red;
+    font-size: large;
+    font-family: 'Lucida Sans' ;
+}
+
+    div.box {
+        display: flex;
+        width: 100%;
+        padding-left: 1vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        font-size: 2vw;
+        align-items: flex-start;
+        flex-wrap: wrap;
+            }
+        
+    @media (min-width: 768px) and (max-width: 1499px)
+    {
+    .Cliente1, .Cliente2, .Cliente3   {
+
+        color: rgb(235, 252, 0);
+        font-size: 1.5vw;
+        font-family: Arial;
+        text-decoration: underline; 
+        float: none;
+        flex: 25%; 
+     }
+     }
+    @media (max-width: 767px) {
+   .Cliente1 {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: none ;
+       font-size: 3vw;
+       font-family: cursive, Verdana;
+       padding: 2%;
+       margin-top: 8%;
+       flex: 100%;
+       width: 100%;
+       color: orange 
+   }
+   
+   .Cliente2, .Cliente3 {
+    flex-direction: column;
+    display: flex;  
+    flex: 40%;
+    padding: 5%;
+    margin-top: 8%;
+    width: 100%;
+    color: orange;
+    font-size: 4vw;
+    font-family: cursive, Verdana;
+           }
+
+    }
+
+    @media (max-width: 560px)
+    {
+        .Cliente1, .Cliente2, .Cliente3 {
+    color: red;
+    font-size: 1.7 vw;
+    flex-direction: column;
+    display: flex;  
+    width: 100%;
+    flex: 100%;
+    font-family: Sans-serif;
+    text-align: left;
+    flex-wrap: wrap;
+        }
+    }
+
+div {
+    background-color: rgb(82, 80, 80);
+}
+
+section {
+    display: flex;
+    width: 100%;
+        }
+
+@media (min-width: 768px) and (max-width: 1499px)
+{
+div#caja1  {
+    display: flex ;
+    flex: 2;  
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-right: 2%;
+    background-color: rgb(252, 239, 121);
+}
+div#caja2 {
+    display: flex ;
+    flex: 2;
+  
+}
+div#caja3 {
+    display: flex ;
+    flex: 2;
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-right: 2%;
+    background-color: rgb(252, 239, 121);
+
+}
+}
+@media (max-width: 767px) 
+{
+section {
+    flex-direction: column;
+}
+div#caja1 {
+    display: flex ;
+    color: yellow;
+    width: 95%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+div#caja2 {
+    display: flex ;
+    width: 95%;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+div#caja3 {
+    display: flex ;
+    width: 95%;
+    color: yellow;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+}
+
+@media (max-width: 480px)
+{
+    section {
+        flex-direction: column;
+}
+div#caja1 {
+    display: flex ;
+    color: rgb(0, 255, 34);
+    width: 95%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+div#caja2 {
+    display: flex ;
+    width: 95%;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+div#caja3 {
+    display: flex ;
+    width: 95%;
+    color:  rgb(0, 255, 34);
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+}
+
+div#menu1
+{
+    flex: 2;
+    padding-left: 40px;
+    background-color: white;
+    }
+
+div#menu2
+{
+    flex: 2;
+    padding-left: 15% ;
+    padding-top: 10% ;
+    background-color: rgb(248, 191, 117);
+}
+
+#Titulo:hover
+{
+	transition: all 2s;
+    background-color: yellow;
+    font-size: 28px;
+}
+
+#casa {
+    font-weight: bolder;
+}
+
+#barrio{
+color: rgb(245, 47, 47);
+font-style: italic;
+border: royalblue;
+font-size: 22px;
+text-align: center;
+
+}
+
+#about {
+    color: black;
+    font-weight: bolder;
+    font-style: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;    
+    }
+
+#about:hover
+{
+    animation: ChangeColor 1s linear 0.1s normal forwards ;
+}
+
+@keyframes ChangeColor {
+    from { background-color: transparent;}
+    to  { background-color: grey}
+    from { font-size: 22px;}
+    to { font-size: 28px;}
+}
+
+
+.receta:link {
+    color: green; 
+font-weight: bold
+}
+
+.receta:visited { 
+    color: yellow; 
+    font-weight: bold
+    }
+
+    div#Sucursales
+    {
+        background-color: grey !important;
+    }
+
+
+footer {
+    height: 60px;
+    padding: 20px;
+    background-color: darkgrey;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 19px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    }
